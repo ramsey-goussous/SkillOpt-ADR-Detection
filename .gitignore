@@ -1,0 +1,13 @@
+.venv/
+external/SkillOpt/
+data_split/*
+!data_split/.gitkeep
+results/*
+!results/.gitkeep
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log

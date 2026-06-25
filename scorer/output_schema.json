@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://khcc-adr-skillopt/output_schema.json",
+  "title": "Suspected ADR Signal Extraction Output",
+  "description": "Structured output a Claude extraction skill must return for a single clinical note. Layers are separated so that the scorer can evaluate drug-reaction pairs (primary), reaction concepts (secondary), causality assertions (secondary), and overcall behaviour on negative notes (safety).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["note_id", "suspected_adr_signals", "unlinked_adverse_events", "negative_controls"],
+  "properties": {
+    "note_id": {
+      "type": "string",
+      "description": "Identifier copied verbatim from the input note."
+    },
+    "suspected_adr_signals": {
+      "type": "array",
+      "description": "PRIMARY layer. Each item is a drug-reaction pair the note links by evidence.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reaction_text",
+          "normalized_reaction",
+          "suspected_drug",
+          "evidence_quote",
+          "temporality",
+          "causality_assertion",
+          "confidence",
+          "reasoning_brief"
+        ],
+        "properties": {
+          "reaction_text": {
+            "type": "string",
+            "description": "Reaction/event span as written in the note."
+          },
+          "normalized_reaction": {
+            "type": "string",
+            "description": "MedDRA Preferred Term if known, otherwise plain-English canonical term (e.g. 'acute kidney injury')."
+          },
+          "suspected_drug": {
+            "type": "string",
+            "description": "Suspected medication as written in the note (generic preferred if stated)."
+          },
+          "drug_class": {
+            "type": ["string", "null"],
+            "description": "Optional drug class, e.g. 'glycopeptide antibiotic'."
+          },
+          "evidence_quote": {
+            "type": "string",
+            "description": "Exact contiguous substring of the note that supports this pair. Must appear verbatim in note_text."
+          },
+          "temporality": {
+            "type": "string",
+            "enum": ["before_drug", "after_drug", "during_drug", "unclear", "not_stated"]
+          },
+          "causality_assertion": {
+            "type": "string",
+            "enum": ["explicit", "probable", "possible", "negated", "unlikely", "none"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"]
+          },
+          "reasoning_brief": {
+            "type": "string",
+            "description": "One sentence justifying the link, using only information present in the note."
+          }
+        }
+      }
+    },
+    "unlinked_adverse_events": {
+      "type": "array",
+      "description": "SECONDARY layer. Adverse events present in the note that are NOT linked to a medication.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["event_text", "normalized_event", "evidence_quote", "reason_not_linked_to_drug"],
+        "properties": {
+          "event_text": { "type": "string" },
+          "normalized_event": { "type": "string" },
+          "evidence_quote": { "type": "string" },
+          "reason_not_linked_to_drug": {
+            "type": "string",
+            "enum": [
+              "no_drug_link_stated",
+              "better_explained_by_illness",
+              "temporal_link_absent",
+              "unclear"
+            ]
+          }
+        }
+      }
+    },
+    "negative_controls": {
+      "type": "array",
+      "description": "SAFETY layer. Spans that look ADR-like but must NOT be reported as active ADR signals.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "why_not_adr"],
+        "properties": {
+          "text": { "type": "string" },
+          "why_not_adr": {
+            "type": "string",
+            "enum": [
+              "negated",
+              "historical_only",
+              "medication_treats_symptom",
+              "disease_symptom",
+              "insufficient_evidence"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

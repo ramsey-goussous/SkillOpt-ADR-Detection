@@ -1,0 +1,2200 @@
+[
+  {
+    "id": "SYN-001",
+    "note_type": "ER",
+    "adr_count": 0,
+    "note_text": "STATUS POST:\nknown metastatic gastric ca with peritoneal disease, on FOLFOX planned but cycle 2 delayed due obstruction\nCHIEF COMPLAIN:\ncame to er c/o N/V, abd distension, no BM 3 days, all started before any new chemo this week\nhome meds: ondansetron PRN for nausea, morphine SR for cancer pain, enoxaparin prophylaxis, pantoprazole\nold amoxicillin rash as child, not active now; no new rash after current meds\nVITAL SIGNS:\n T: 99.0 F (37.2 C)\n P: 108\n R: 20\n B/P: 112/70\n Pulse Oximetry: 97%\nPAIN SCORE: 6/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n ABD DISTENDED, TINKLING BOWEL SOUND, MILD DIFFUSE TENDERNESS\n GOOD AIR ENTRY BILATERAL, NO ADD SOUND\nASSESSMENT AND CONCLUSION:\npartial bowel obstruction likely peritoneal mets, dehydration, no clear drug reaction today\nPLAN OF CARE:\nNG tube, IV fluids, ondansetron given for nausea, morphine given for pain, surgical consult\n/es/ Lamis Darwish, MD\nSigned: 07/06/2026 08:14",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "N/V, abd distension, no BM 3 days",
+          "normalized_event": "Intestinal obstruction",
+          "evidence_quote": "came to er c/o N/V, abd distension, no BM 3 days",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "dehydration",
+          "normalized_event": "Dehydration",
+          "evidence_quote": "dehydration",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "all started before any new chemo this week",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "ondansetron PRN for nausea",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "morphine SR for cancer pain",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "old amoxicillin rash as child",
+          "why_not_adr": "historical_only"
+        },
+        {
+          "text": "no new rash after current meds",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-002",
+    "note_type": "consultant",
+    "adr_count": 0,
+    "note_text": "AUTHOR: Samih Qudah STATUS: COMPLETED\nA 64 year old gentleman, a case of metastatic NSCLC, on carboplatin/pemetrexed/pembrolizumab, cycle 1 was held today.\nSeen because of cough, wt loss and pleuritic pain; symptoms were present for 6 weeks before immunotherapy decision.\n- CT chest 07/03/2026: bulky RUL mass, lymphangitic spread, small pleural effusion; no radiology comment of pneumonitis.\n- Labs: Hb 10.2 WBC 12.1 ANC 9.8 Plt 410 Cr 0.9 Na 132, TSH baseline 4.1.\n- Meds: codeine syrup for cough, paracetamol for pain, ceftriaxone started yesterday for post-obstructive pneumonia.\nNo diarrhea, no rash, no new SOB after pembrolizumab because treatment not yet given.\nExam: cachectic, decreased air entry Rt upper zone, abdomen soft, PS 2.\nplan\nadmit for antibiotics and drainage if effusion increases, start systemic therapy after infection controlled.",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "cough, wt loss and pleuritic pain",
+          "normalized_event": "Cough",
+          "evidence_quote": "Seen because of cough, wt loss and pleuritic pain",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "post-obstructive pneumonia",
+          "normalized_event": "Pneumonia",
+          "evidence_quote": "post-obstructive pneumonia",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "small pleural effusion",
+          "normalized_event": "Pleural effusion",
+          "evidence_quote": "small pleural effusion",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "codeine syrup for cough",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "paracetamol for pain",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "ceftriaxone started yesterday for post-obstructive pneumonia",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "No diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no new SOB after pembrolizumab because treatment not yet given",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-003",
+    "note_type": "ER",
+    "adr_count": 0,
+    "note_text": "STATUS POST:\nAML day 14 post induction, not on active chemo today, central line in situ\nCHIEF COMPLAIN:\ncame to er for fever and chills; fever started before first dose of meropenem in day care\npt on acyclovir prophylaxis, fluconazole prophylaxis, allopurinol, PRBC transfusion yesterday uneventful\nloose stool x1 after lactulose given for constipation, no recurrent diarrhea\nno urticaria, no wheeze, no flank pain\nVITAL SIGNS:\n T: 102.2 F (39.0 C)\n P: 126\n R: 22\n B/P: 96/60\n Pulse Oximetry: 96%\nPAIN SCORE: 2/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n LINE SITE MILD ERYTHEMA, NO PUS\n CHEST CLEAR, ABD SOFT LAX\nASSESSMENT AND CONCLUSION:\nneutropenic fever likely line infection/sepsis, not temporally related to abx\nPLAN OF CARE:\nblood cultures, meropenem and vancomycin started for sepsis, paracetamol given for fever, admit\n/es/ Rawan Sukkar, MD\nSigned: 07/06/2026 21:42",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "fever and chills",
+          "normalized_event": "Febrile neutropenia",
+          "evidence_quote": "came to er for fever and chills",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "LINE SITE MILD ERYTHEMA",
+          "normalized_event": "Catheter site erythema",
+          "evidence_quote": "LINE SITE MILD ERYTHEMA",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "fever started before first dose of meropenem",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "loose stool x1 after lactulose given for constipation",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "no urticaria",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no wheeze",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "meropenem and vancomycin started for sepsis",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "paracetamol given for fever",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-004",
+    "note_type": "consultant",
+    "adr_count": 0,
+    "note_text": "AUTHOR: Hiba Nabulsi STATUS: COMPLETED\nA 46 year old lady, a case of ovarian ca with peritoneal/omental mets, on weekly paclitaxel planned, not given for 3 weeks.\nC/o abdominal bloating, early satiety, mild nausea and low Na 127; family worried it is from chemo but last paclitaxel was remote and sx progressed with ascites.\n- US 07/05/2026: large malignant ascites, no hydronephrosis.\n- Labs: Na 127, Cr 0.8, Alb 2.7, Hb 9.5, WBC 6.2, Plt 280.\n- Meds: spironolactone started today for ascites, metoclopramide PRN for nausea, oxycodone PRN for pain.\nNo tingling, no infusion rash, no mouth ulcers, no bleeding.\nExam: distended abdomen with shifting dullness, soft, no peritonitis, PS 2.\nplan\ntherapeutic paracentesis, salt/fluid advice, delay paclitaxel until symptoms improve.",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "abdominal bloating, early satiety, mild nausea",
+          "normalized_event": "Abdominal distension",
+          "evidence_quote": "C/o abdominal bloating, early satiety, mild nausea",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "low Na 127",
+          "normalized_event": "Hyponatraemia",
+          "evidence_quote": "low Na 127",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "large malignant ascites",
+          "normalized_event": "Malignant ascites",
+          "evidence_quote": "large malignant ascites",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "not given for 3 weeks",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "spironolactone started today for ascites",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "metoclopramide PRN for nausea",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "oxycodone PRN for pain",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "No tingling",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no infusion rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no bleeding",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-005",
+    "note_type": "ER",
+    "adr_count": 0,
+    "note_text": "STATUS POST:\ncolon ca s/p right hemicolectomy, adjuvant CAPOX finished 8 months ago, currently surveillance\nCHIEF COMPLAIN:\ncame to er for Rt leg swelling and SOB after long car trip; he is not on anticoagulation yet\nmentions chronic numb toes since old oxaliplatin, unchanged for months and not active complaint\nno active bleeding, no rash, no recent contrast exposure\nVITAL SIGNS:\n T: 98.5 F (36.9 C)\n P: 116\n R: 24\n B/P: 124/76\n Pulse Oximetry: 93%\nPAIN SCORE: 3/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n RT CALF SWOLLEN TENDER\n GOOD AIR ENTRY, MILD TACHYPNOEA\nASSESSMENT AND CONCLUSION:\nprobable DVT/PE related to malignancy/travel, old chemo neuropathy history only\nPLAN OF CARE:\nCTPA, start heparin after labs, oxygen, analgesia PRN\n/es/ Firas Nazzal, MD\nSigned: 07/07/2026 12:31",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "Rt leg swelling and SOB",
+          "normalized_event": "Pulmonary embolism",
+          "evidence_quote": "came to er for Rt leg swelling and SOB after long car trip",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "RT CALF SWOLLEN TENDER",
+          "normalized_event": "Deep vein thrombosis",
+          "evidence_quote": "RT CALF SWOLLEN TENDER",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "he is not on anticoagulation yet",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "chronic numb toes since old oxaliplatin, unchanged for months",
+          "why_not_adr": "historical_only"
+        },
+        {
+          "text": "no active bleeding",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no recent contrast exposure",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-006",
+    "note_type": "consultant",
+    "adr_count": 1,
+    "note_text": "AUTHOR: Karim AlQaisi STATUS: COMPLETED\nA 57 year old gentleman, a case of rectal ca with liver mets, on FOLFIRI + bevacizumab, cycle 5 on 07/01/2026.\nHe reports 7 watery stools/day starting 24 hr after irinotecan; had baseline 1-2 loose stools from rectal mass but this is clearly worse.\n- Stool C diff negative, culture pending; no travel, no sick contact.\n- Labs: K 3.2, Cr 1.0, WBC 4.9 ANC 3.0, Plt 188.\n- Also has mild rectal bleeding from tumor before bevacizumab, unchanged.\nExam: mild dehydration, abdomen soft no guarding, PR small tumor ooze.\nAssessment: irinotecan delayed diarrhea; rectal bleeding disease related.\nplan\nloperamide high dose, IV fluids, reduce irinotecan next cycle, continue bev if bleeding stable.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "7 watery stools/day",
+          "normalized_reaction": "Diarrhoea",
+          "suspected_drug": "irinotecan",
+          "drug_class": "topoisomerase I inhibitor",
+          "evidence_quote": "7 watery stools/day starting 24 hr after irinotecan",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The note states diarrhea worsened starting 24 hours after irinotecan and assesses irinotecan delayed diarrhea."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "mild rectal bleeding",
+          "normalized_event": "Rectal haemorrhage",
+          "evidence_quote": "mild rectal bleeding from tumor before bevacizumab, unchanged",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "K 3.2",
+          "normalized_event": "Hypokalaemia",
+          "evidence_quote": "K 3.2",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "C diff negative",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no travel",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no sick contact",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "loperamide high dose",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-007",
+    "note_type": "ER",
+    "adr_count": 1,
+    "note_text": "STATUS POST:\nmultiple myeloma on VRd, came day 9 after bortezomib, also has known diabetic neuropathy old\nCHIEF COMPLAIN:\ncame to er for burning feet, says old numbness existed but new shooting pain up calves after bortezomib dose escalation\nalso c/o back pain same as lytic lesion pain; no urinary retention\nhome meds: lenalidomide, dexamethasone weekly, gabapentin for old neuropathy, acyclovir\nVITAL SIGNS:\n T: 98.1 F (36.7 C)\n P: 84\n R: 18\n B/P: 128/80\n Pulse Oximetry: 99%\nPAIN SCORE: 7/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n DECREASED PIN PRICK FEET, POWER 5/5\n SPINE TENDERNESS L3 KNOWN SITE\nASSESSMENT AND CONCLUSION:\nprobable bortezomib neuropathic pain on top of baseline diabetic neuropathy; back pain myeloma related\nPLAN OF CARE:\nhold bortezomib, increase gabapentin, MRI only if neuro deficit\n/es/ Basel Harfoush, MD\nSigned: 07/08/2026 03:09",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "new shooting pain up calves",
+          "normalized_reaction": "Peripheral neuropathy",
+          "suspected_drug": "bortezomib",
+          "drug_class": "proteasome inhibitor",
+          "evidence_quote": "new shooting pain up calves after bortezomib dose escalation",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "medium",
+          "reasoning_brief": "The new neuropathic pain followed bortezomib dose escalation and the assessment calls it probable bortezomib neuropathic pain."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "old numbness",
+          "normalized_event": "Neuropathy peripheral",
+          "evidence_quote": "old numbness existed",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "back pain",
+          "normalized_event": "Back pain",
+          "evidence_quote": "back pain same as lytic lesion pain",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "gabapentin for old neuropathy",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "no urinary retention",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "increase gabapentin",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-008",
+    "note_type": "consultant",
+    "adr_count": 1,
+    "note_text": "AUTHOR: Manar Zreiqat STATUS: COMPLETED\nA 39 year old lady, a case of classical Hodgkin lymphoma, on AVD after bleomycin stopped previously, cycle 4 on 07/02/2026.\nShe came with palpitations and anxiety before chemo, ECG before infusion normal; later QTc 512 after ondansetron IV plus home escitalopram.\n- K 3.9 Mg 1.9 Ca 9.0, TSH 2.1, troponin negative.\n- No syncope, no chest pain; old bleomycin cough resolved months ago.\nExam: stable, HR 104, chest clear, abdomen soft.\nAssessment: drug related QT prolongation likely ondansetron/escitalopram combination; anxiety pre-existing.\nplan\navoid ondansetron, use aprepitant/low dose olanzapine with ECG monitoring, discuss SSRI with psych.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "QTc 512",
+          "normalized_reaction": "Electrocardiogram QT prolonged",
+          "suspected_drug": "ondansetron IV plus home escitalopram",
+          "drug_class": "5-HT3 antagonist and SSRI",
+          "evidence_quote": "QTc 512 after ondansetron IV plus home escitalopram",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "QTc prolongation occurred after ondansetron IV with escitalopram and the assessment calls it likely drug related."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "palpitations and anxiety",
+          "normalized_event": "Anxiety",
+          "evidence_quote": "palpitations and anxiety before chemo",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "old bleomycin cough",
+          "normalized_event": "Cough",
+          "evidence_quote": "old bleomycin cough resolved months ago",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "ECG before infusion normal",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "No syncope",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no chest pain",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-009",
+    "note_type": "ER",
+    "adr_count": 1,
+    "note_text": "STATUS POST:\nca bladder on palliative gemcitabine/carboplatin, admitted last week with UTI, received IV contrast CT 48 hr before admission\nCHIEF COMPLAIN:\ncame to er for high scr 2.0, oliguria, poor intake\nCr was 0.9 before CT contrast, became 1.8 next morning before any vancomycin was given; vanco trough later low 8\nno flank pain, no rash, no eosinophilia\nVITAL SIGNS:\n T: 98.9 F (37.2 C)\n P: 96\n R: 18\n B/P: 106/68\n Pulse Oximetry: 98%\nPAIN SCORE: 1/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n DRY TONGUE, NO EDEMA\n ABD SOFT, NO SUPRAPUBIC TENDERNESS\nASSESSMENT AND CONCLUSION:\ncontrast associated AKI, dehydration contributing; vancomycin nephrotoxicity unlikely by timing\nPLAN OF CARE:\nIV fluids, hold contrast studies, renal consult, monitor vanco level if continued\n/es/ Nader Mashni, MD\nSigned: 07/08/2026 19:24",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "high scr 2.0",
+          "normalized_reaction": "Acute kidney injury",
+          "suspected_drug": "IV contrast",
+          "drug_class": "iodinated contrast media",
+          "evidence_quote": "Cr was 0.9 before CT contrast, became 1.8 next morning before any vancomycin was given",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Creatinine rose after CT contrast and before vancomycin, and the assessment states contrast associated AKI."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "poor intake",
+          "normalized_event": "Decreased appetite",
+          "evidence_quote": "poor intake",
+          "reason_not_linked_to_drug": "unclear"
+        },
+        {
+          "event_text": "dehydration",
+          "normalized_event": "Dehydration",
+          "evidence_quote": "dehydration contributing",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "before any vancomycin was given",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "no flank pain",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no eosinophilia",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-010",
+    "note_type": "consultant",
+    "adr_count": 1,
+    "note_text": "AUTHOR: Zeina Salameh STATUS: COMPLETED\nA 71 year old gentleman, a case of metastatic prostate ca, on abiraterone + prednisone, leuprolide, and denosumab.\nSeen for fatigue, edema and low K. Edema preceded abiraterone with hypoalbumin; K 2.8 developed after abiraterone dose increase despite supplements.\n- Labs: K 2.8, Na 139, Cr 1.0, ALT 28, albumin 2.5; urine protein negative.\n- CT 07/04/2026: stable bone mets, new small ascites likely liver disease.\nNo diarrhea, no vomiting, no adrenal crisis sx.\nExam: bilateral ankle edema, abdomen soft mild ascites, BP 142/88.\nAssessment: abiraterone mineralocorticoid effect causing hypokalemia; edema multifactorial not clearly drug related.\nplan\nhold abiraterone 1 week, increase prednisone compliance, K replacement, review albumin/ascites.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "K 2.8",
+          "normalized_reaction": "Hypokalaemia",
+          "suspected_drug": "abiraterone",
+          "drug_class": "CYP17 inhibitor hormonal therapy",
+          "evidence_quote": "K 2.8 developed after abiraterone dose increase despite supplements",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Hypokalemia developed after abiraterone dose increase and is assessed as mineralocorticoid effect from abiraterone."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "Edema",
+          "normalized_event": "Oedema peripheral",
+          "evidence_quote": "Edema preceded abiraterone with hypoalbumin",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "small ascites",
+          "normalized_event": "Ascites",
+          "evidence_quote": "new small ascites likely liver disease",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "No diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no vomiting",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "K replacement",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-011",
+    "note_type": "ER",
+    "adr_count": 2,
+    "note_text": "STATUS POST:\nmetastatic breast ca on trastuzumab/pertuzumab + docetaxel, cycle 6 last week, also on furosemide for old CHF\nCHIEF COMPLAIN:\ncame to er for SOB, leg swelling, diarrhea\nEcho 3 months ago EF 58, today EF 39 after trastuzumab exposure; diarrhea started after pertuzumab, 5/day watery\nleg swelling existed before chemo and worsened with CHF; no fever, no blood in stool\nVITAL SIGNS:\n T: 98.8 F (37.1 C)\n P: 112\n R: 24\n B/P: 118/72\n Pulse Oximetry: 92%\nPAIN SCORE: 1/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n BASAL CREPS, BILATERAL PITTING EDEMA\n ABD SOFT LAX\nASSESSMENT AND CONCLUSION:\ntrastuzumab cardiomyopathy likely, pertuzumab diarrhea; edema partly chronic CHF\nPLAN OF CARE:\nhold anti-HER2 therapy, cardiology consult, IV diuretic, loperamide, stool studies\n/es/ Rami Khader, MD\nSigned: 07/09/2026 10:03",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "EF 39",
+          "normalized_reaction": "Cardiomyopathy",
+          "suspected_drug": "trastuzumab",
+          "drug_class": "HER2 inhibitor",
+          "evidence_quote": "today EF 39 after trastuzumab exposure",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Ejection fraction fell after trastuzumab exposure and the assessment states trastuzumab cardiomyopathy likely."
+        },
+        {
+          "reaction_text": "diarrhea",
+          "normalized_reaction": "Diarrhoea",
+          "suspected_drug": "pertuzumab",
+          "drug_class": "HER2 inhibitor",
+          "evidence_quote": "diarrhea started after pertuzumab, 5/day watery",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Watery diarrhea started after pertuzumab and is assessed as pertuzumab diarrhea."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "leg swelling",
+          "normalized_event": "Oedema peripheral",
+          "evidence_quote": "leg swelling existed before chemo and worsened with CHF",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "SOB",
+          "normalized_event": "Dyspnoea",
+          "evidence_quote": "came to er for SOB",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no blood in stool",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "IV diuretic",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "loperamide",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-012",
+    "note_type": "consultant",
+    "adr_count": 2,
+    "note_text": "AUTHOR: Rula Bseiso STATUS: COMPLETED\nA 50 year old lady, a case of metastatic melanoma, on pembrolizumab, cycle 7 on 06/27/2026.\nShe has chronic IBS diarrhea 2/day for years, but now 9/day watery stools after pembrolizumab with crampy pain; also TSH 0.02 with tremor after last two cycles.\n- Stool PCR negative, calprotectin high; CT abdomen no obstruction.\n- Labs: FT4 2.4, ALT 44, Cr 0.8, K 3.4.\n- No fever, no laxative use, no blood in stool.\nExam: mild diffuse tenderness, no guarding, pulse 112.\nAssessment: immune colitis and immune thyroiditis; baseline IBS noted but not enough to explain change.\nplan\nhold pembro, prednisone, endocrine review, beta blocker, repeat TFT.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "9/day watery stools",
+          "normalized_reaction": "Colitis",
+          "suspected_drug": "pembrolizumab",
+          "drug_class": "PD-1 inhibitor",
+          "evidence_quote": "now 9/day watery stools after pembrolizumab with crampy pain",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Diarrhea worsened after pembrolizumab and is assessed as immune colitis."
+        },
+        {
+          "reaction_text": "TSH 0.02 with tremor",
+          "normalized_reaction": "Thyroiditis",
+          "suspected_drug": "pembrolizumab",
+          "drug_class": "PD-1 inhibitor",
+          "evidence_quote": "TSH 0.02 with tremor after last two cycles",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Low TSH with tremor occurred after recent cycles and is assessed as immune thyroiditis."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "chronic IBS diarrhea 2/day",
+          "normalized_event": "Irritable bowel syndrome",
+          "evidence_quote": "chronic IBS diarrhea 2/day for years",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "K 3.4",
+          "normalized_event": "Hypokalaemia",
+          "evidence_quote": "K 3.4",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "Stool PCR negative",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "No fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no laxative use",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "prednisone",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "beta blocker",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-013",
+    "note_type": "ER",
+    "adr_count": 2,
+    "note_text": "STATUS POST:\nesophageal ca on nivolumab, recent admission for aspiration pneumonia on pip-tazo, received CT contrast yesterday\nCHIEF COMPLAIN:\ncame to er c/o SOB and cough, also creatinine increased\nSOB began while eating before nivolumab cycle and CXR shows RLL aspiration; Cr rose from 0.7 to 1.5 after CT contrast, before pip-tazo dose 2\nnew itchy morbilliform rash appeared after pip-tazo 3rd dose\nno wheeze, no lip swelling, no diarrhea\nVITAL SIGNS:\n T: 100.4 F (38.0 C)\n P: 118\n R: 26\n B/P: 104/66\n Pulse Oximetry: 91%\nPAIN SCORE: 0/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n RLL CREPS, DIFFUSE TRUNK RASH\n ABD SOFT LAX\nASSESSMENT AND CONCLUSION:\naspiration pneumonia, contrast AKI, pip-tazo drug eruption; nivolumab pneumonitis less likely\nPLAN OF CARE:\nIV fluids, stop pip-tazo, switch meropenem, antihistamine, oxygen\n/es/ Yasmeen Qublan, MD\nSigned: 07/10/2026 01:15",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "Cr rose from 0.7 to 1.5",
+          "normalized_reaction": "Acute kidney injury",
+          "suspected_drug": "CT contrast",
+          "drug_class": "iodinated contrast media",
+          "evidence_quote": "Cr rose from 0.7 to 1.5 after CT contrast",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Creatinine rose after CT contrast and the assessment states contrast AKI."
+        },
+        {
+          "reaction_text": "itchy morbilliform rash",
+          "normalized_reaction": "Rash morbilliform",
+          "suspected_drug": "pip-tazo",
+          "drug_class": "beta-lactam/beta-lactamase inhibitor antibiotic",
+          "evidence_quote": "new itchy morbilliform rash appeared after pip-tazo 3rd dose",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The new rash appeared after the third pip-tazo dose and is assessed as pip-tazo drug eruption."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "SOB and cough",
+          "normalized_event": "Aspiration pneumonia",
+          "evidence_quote": "came to er c/o SOB and cough",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "RLL aspiration",
+          "normalized_event": "Aspiration",
+          "evidence_quote": "CXR shows RLL aspiration",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "before pip-tazo dose 2",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "no wheeze",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no lip swelling",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "antihistamine",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-014",
+    "note_type": "consultant",
+    "adr_count": 2,
+    "note_text": "AUTHOR: Tariq Hattar STATUS: COMPLETED\nA 60 year old gentleman, a case of pancreatic ca, on modified FOLFIRINOX, cycle 3 on 07/01/2026.\nSeen for feverish feeling, N/V, abd pain. Pain is tumor pain unchanged, feverish feeling no documented fever.\nHe had grade 3 vomiting beginning evening after irinotecan/oxaliplatin infusion despite ondansetron; also cold dysesthesia in throat/fingers after oxaliplatin.\n- Labs: WBC 5.3 ANC 3.1 Plt 180 Cr 0.9, lipase normal, bilirubin 1.1.\n- No diarrhea, no obstruction on CT, no infection focus.\nExam: hydrated after IV fluids, abdomen soft with epigastric tenderness same as baseline.\nAssessment: chemotherapy induced vomiting and acute oxaliplatin cold dysesthesia; tumor pain stable.\nplan\nadd aprepitant/olanzapine, extend dex, counsel avoid cold drinks, consider oxaliplatin reduction.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "grade 3 vomiting",
+          "normalized_reaction": "Vomiting",
+          "suspected_drug": "irinotecan/oxaliplatin infusion",
+          "drug_class": "cytotoxic chemotherapy",
+          "evidence_quote": "grade 3 vomiting beginning evening after irinotecan/oxaliplatin infusion",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Vomiting began after chemotherapy infusion and is assessed as chemotherapy induced vomiting."
+        },
+        {
+          "reaction_text": "cold dysesthesia in throat/fingers",
+          "normalized_reaction": "Dysaesthesia",
+          "suspected_drug": "oxaliplatin",
+          "drug_class": "platinum agent",
+          "evidence_quote": "cold dysesthesia in throat/fingers after oxaliplatin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Cold dysesthesia followed oxaliplatin and is assessed as acute oxaliplatin cold dysesthesia."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "Pain is tumor pain unchanged",
+          "normalized_event": "Cancer pain",
+          "evidence_quote": "Pain is tumor pain unchanged",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "feverish feeling no documented fever",
+          "normalized_event": "Feeling hot",
+          "evidence_quote": "feverish feeling no documented fever",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "despite ondansetron",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "No diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no obstruction",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no infection focus",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "add aprepitant/olanzapine",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-015",
+    "note_type": "ER",
+    "adr_count": 2,
+    "note_text": "STATUS POST:\nCML on dasatinib, started 3 months ago; old COPD and lung mets ruled out by PET\nCHIEF COMPLAIN:\ncame to er for progressive SOB and pleural effusion, plus black stool\nCXR: new large Lt pleural effusion after dasatinib, cytology previously negative; black stool started after ibuprofen self use for rib pain, not on anticoagulant\nno hemoptysis, no fever, no rash\nVITAL SIGNS:\n T: 98.6 F (37.0 C)\n P: 104\n R: 24\n B/P: 110/64\n Pulse Oximetry: 90%\nPAIN SCORE: 5/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n DECREASED AIR ENTRY LT BASE\n ABD SOFT, EPIGASTRIC TENDERNESS\nASSESSMENT AND CONCLUSION:\ndasatinib pleural effusion; NSAID gastritis/GI bleed possible\nPLAN OF CARE:\nhold dasatinib, diagnostic tap, stop ibuprofen, IV PPI, CBC trend\n/es/ Abeer Nimer, MD\nSigned: 07/10/2026 20:55",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "new large Lt pleural effusion",
+          "normalized_reaction": "Pleural effusion",
+          "suspected_drug": "dasatinib",
+          "drug_class": "BCR-ABL tyrosine kinase inhibitor",
+          "evidence_quote": "new large Lt pleural effusion after dasatinib",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The pleural effusion is new after dasatinib and is assessed as dasatinib pleural effusion."
+        },
+        {
+          "reaction_text": "black stool",
+          "normalized_reaction": "Gastrointestinal haemorrhage",
+          "suspected_drug": "ibuprofen",
+          "drug_class": "nonsteroidal anti-inflammatory drug",
+          "evidence_quote": "black stool started after ibuprofen self use for rib pain",
+          "temporality": "after_drug",
+          "causality_assertion": "possible",
+          "confidence": "medium",
+          "reasoning_brief": "Black stool started after ibuprofen use and the assessment says NSAID gastritis/GI bleed possible."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "rib pain",
+          "normalized_event": "Rib pain",
+          "evidence_quote": "rib pain",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        },
+        {
+          "event_text": "progressive SOB",
+          "normalized_event": "Dyspnoea",
+          "evidence_quote": "came to er for progressive SOB",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "not on anticoagulant",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "no hemoptysis",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "IV PPI",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-016",
+    "note_type": "consultant",
+    "adr_count": 3,
+    "note_text": "AUTHOR: Mays AbuFares STATUS: COMPLETED\nA 42 year old lady, a case of TNBC, on pembrolizumab + carboplatin/paclitaxel, cycle 6 on 07/03/2026.\nComplains of fatigue, numb toes, cough, and new LFT rise. Fatigue existed with anemia before treatment.\nNumb toes became constant after weekly paclitaxel; ALT/AST 360/310 after pembrolizumab with viral screen negative; cough is productive with RLL infiltrate and fever.\n- Labs: Hb 8.7, ANC 2.2, Plt 160, bili 0.8, TSH 3.2.\n- CXR: RLL infiltrate; no bilateral GGO. No diarrhea, no rash.\nExam: mild sensory loss toes, chest RLL creps, abdomen soft.\nAssessment: paclitaxel neuropathy, immune hepatitis likely, bacterial pneumonia not ICI pneumonitis.\nplan\nhold pembro/paclitaxel, start prednisone after hepatology review, ceftriaxone for pneumonia, pregabalin.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "Numb toes",
+          "normalized_reaction": "Peripheral neuropathy",
+          "suspected_drug": "paclitaxel",
+          "drug_class": "taxane chemotherapy",
+          "evidence_quote": "Numb toes became constant after weekly paclitaxel",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Toe numbness became constant after weekly paclitaxel and is assessed as paclitaxel neuropathy."
+        },
+        {
+          "reaction_text": "ALT/AST 360/310",
+          "normalized_reaction": "Hepatitis",
+          "suspected_drug": "pembrolizumab",
+          "drug_class": "PD-1 inhibitor",
+          "evidence_quote": "ALT/AST 360/310 after pembrolizumab",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Transaminases rose after pembrolizumab with negative viral screen and are assessed as immune hepatitis."
+        },
+        {
+          "reaction_text": "numb toes",
+          "normalized_reaction": "Hypoaesthesia",
+          "suspected_drug": "paclitaxel",
+          "drug_class": "taxane chemotherapy",
+          "evidence_quote": "mild sensory loss toes",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "medium",
+          "reasoning_brief": "Exam confirms sensory loss in the same distribution as the paclitaxel-linked numb toes."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "Fatigue",
+          "normalized_event": "Fatigue",
+          "evidence_quote": "Fatigue existed with anemia before treatment",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "cough",
+          "normalized_event": "Pneumonia",
+          "evidence_quote": "cough is productive with RLL infiltrate and fever",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "Hb 8.7",
+          "normalized_event": "Anaemia",
+          "evidence_quote": "Hb 8.7",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "viral screen negative",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "no bilateral GGO",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "No diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "ceftriaxone for pneumonia",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "pregabalin",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-017",
+    "note_type": "ER",
+    "adr_count": 3,
+    "note_text": "STATUS POST:\nDLBCL on R-CHOP cycle 2 day 8, on allopurinol, apixaban for PICC DVT, and prednisone completed yesterday\nCHIEF COMPLAIN:\ncame to er for fever, weakness, gum bleed, sugar high\nANC 0.3 one week after R-CHOP; glucose 384 since prednisone days 1-5; gum bleeding while on apixaban with Plt 115 and normal PT\nfever may be neutropenic sepsis, no rash, no melena, no DKA sx\nVITAL SIGNS:\n T: 101.9 F (38.8 C)\n P: 124\n R: 22\n B/P: 100/62\n Pulse Oximetry: 96%\nPAIN SCORE: 2/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n GUM OOZING, NO PETECHIAE\n CHEST CLEAR, ABD SOFT\nASSESSMENT AND CONCLUSION:\nchemo neutropenia with fever, steroid hyperglycemia, apixaban mucosal bleeding\nPLAN OF CARE:\ncefepime for neutropenic fever, insulin sliding scale, hold apixaban, cultures, GCSF per protocol\n/es/ Hani Kilani, MD\nSigned: 07/11/2026 04:18",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "ANC 0.3",
+          "normalized_reaction": "Neutropenia",
+          "suspected_drug": "R-CHOP",
+          "drug_class": "cytotoxic chemoimmunotherapy",
+          "evidence_quote": "ANC 0.3 one week after R-CHOP",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "ANC is low one week after R-CHOP and the assessment states chemo neutropenia."
+        },
+        {
+          "reaction_text": "glucose 384",
+          "normalized_reaction": "Hyperglycaemia",
+          "suspected_drug": "prednisone",
+          "drug_class": "corticosteroid",
+          "evidence_quote": "glucose 384 since prednisone days 1-5",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Hyperglycemia occurred since prednisone days 1-5 and is assessed as steroid hyperglycemia."
+        },
+        {
+          "reaction_text": "gum bleeding",
+          "normalized_reaction": "Gingival bleeding",
+          "suspected_drug": "apixaban",
+          "drug_class": "factor Xa inhibitor anticoagulant",
+          "evidence_quote": "gum bleeding while on apixaban",
+          "temporality": "during_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Gum bleeding occurred while on apixaban and is assessed as apixaban mucosal bleeding."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "fever",
+          "normalized_event": "Febrile neutropenia",
+          "evidence_quote": "fever may be neutropenic sepsis",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "weakness",
+          "normalized_event": "Asthenia",
+          "evidence_quote": "came to er for fever, weakness, gum bleed, sugar high",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no rash",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no melena",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no DKA sx",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "cefepime for neutropenic fever",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "insulin sliding scale",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-018",
+    "note_type": "consultant",
+    "adr_count": 3,
+    "note_text": "AUTHOR: Nadine Safadi STATUS: COMPLETED\nA 69 year old gentleman, a case of metastatic RCC, on cabozantinib 60 mg, started 5 weeks ago, with warfarin for mechanical valve.\nSeen for mouth pain, BP, diarrhea and anemia. Oral ulcers began after cabozantinib and improved on 3 day hold; BP 178/96 since cabozantinib; INR 5.6 after starting fluconazole for thrush while on warfarin.\nDiarrhea was present from pancreatic insufficiency before cabozantinib and unchanged on enzymes.\n- Labs: Hb 9.0, Cr 1.0, AST 51, urine protein 1+.\nNo melena, no hematemesis, no fever.\nAssessment: cabozantinib mucositis and hypertension; warfarin-fluconazole interaction causing supratherapeutic INR; diarrhea not drug related.\nplan\nreduce cabozantinib, amlodipine, stop fluconazole, adjust warfarin, oral care.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "Oral ulcers",
+          "normalized_reaction": "Stomatitis",
+          "suspected_drug": "cabozantinib",
+          "drug_class": "tyrosine kinase inhibitor",
+          "evidence_quote": "Oral ulcers began after cabozantinib and improved on 3 day hold",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Oral ulcers began after cabozantinib and improved with drug hold, and the assessment calls it cabozantinib mucositis."
+        },
+        {
+          "reaction_text": "BP 178/96",
+          "normalized_reaction": "Hypertension",
+          "suspected_drug": "cabozantinib",
+          "drug_class": "tyrosine kinase inhibitor",
+          "evidence_quote": "BP 178/96 since cabozantinib",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The elevated blood pressure occurred since cabozantinib and is assessed as cabozantinib hypertension."
+        },
+        {
+          "reaction_text": "INR 5.6",
+          "normalized_reaction": "International normalised ratio increased",
+          "suspected_drug": "warfarin-fluconazole",
+          "drug_class": "vitamin K antagonist and azole antifungal",
+          "evidence_quote": "INR 5.6 after starting fluconazole for thrush while on warfarin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "INR rose after fluconazole was started while on warfarin and the assessment states an interaction."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "Diarrhea",
+          "normalized_event": "Diarrhoea",
+          "evidence_quote": "Diarrhea was present from pancreatic insufficiency before cabozantinib",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "Hb 9.0",
+          "normalized_event": "Anaemia",
+          "evidence_quote": "Hb 9.0",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        },
+        {
+          "event_text": "thrush",
+          "normalized_event": "Oral candidiasis",
+          "evidence_quote": "fluconazole for thrush",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "fluconazole for thrush",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "No melena",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no hematemesis",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "amlodipine",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-019",
+    "note_type": "ER",
+    "adr_count": 3,
+    "note_text": "STATUS POST:\nALL on asparaginase-based regimen, ceftriaxone for UTI, morphine PCA post procedure\nCHIEF COMPLAIN:\ncame to er for abd pain, lethargy, rash\namylase/lipase high after pegaspargase with epigastric pain radiating back; sleepy RR 9 after morphine bolus; urticarial rash after ceftriaxone infusion\nabd pain initially thought disease but CT no obstruction; no hypotension, no tongue swelling\nVITAL SIGNS:\n T: 99.3 F (37.4 C)\n P: 110\n R: 9\n B/P: 108/70\n Pulse Oximetry: 92%\nPAIN SCORE: 8/10\nPHYSICAL EXAM:\n DROWSY, AROUSABLE\n EPIGASTRIC TENDERNESS, NO GUARDING\n URTICARIA OVER CHEST\nASSESSMENT AND CONCLUSION:\nasparaginase pancreatitis, opioid respiratory depression/sedation, ceftriaxone urticaria\nPLAN OF CARE:\nstop pegaspargase and ceftriaxone, naloxone PRN, IV fluids, NPO, allergy note\n/es/ Laith Madi, MD\nSigned: 07/12/2026 02:26",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "amylase/lipase high",
+          "normalized_reaction": "Pancreatitis",
+          "suspected_drug": "pegaspargase",
+          "drug_class": "asparagine-specific enzyme antineoplastic",
+          "evidence_quote": "amylase/lipase high after pegaspargase with epigastric pain radiating back",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Pancreatic enzymes and epigastric pain occurred after pegaspargase and are assessed as asparaginase pancreatitis."
+        },
+        {
+          "reaction_text": "sleepy RR 9",
+          "normalized_reaction": "Respiratory depression",
+          "suspected_drug": "morphine",
+          "drug_class": "opioid analgesic",
+          "evidence_quote": "sleepy RR 9 after morphine bolus",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Sleepiness with low respiratory rate followed morphine bolus and is assessed as opioid respiratory depression."
+        },
+        {
+          "reaction_text": "urticarial rash",
+          "normalized_reaction": "Urticaria",
+          "suspected_drug": "ceftriaxone",
+          "drug_class": "cephalosporin antibiotic",
+          "evidence_quote": "urticarial rash after ceftriaxone infusion",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Urticarial rash occurred after ceftriaxone infusion and is assessed as ceftriaxone urticaria."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "abd pain initially thought disease",
+          "normalized_event": "Abdominal pain",
+          "evidence_quote": "abd pain initially thought disease",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no obstruction",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no hypotension",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no tongue swelling",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "naloxone PRN",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-020",
+    "note_type": "consultant",
+    "adr_count": 3,
+    "note_text": "AUTHOR: Omar Jaradat STATUS: COMPLETED\nA 74 year old gentleman, a case of metastatic urothelial ca, on enfortumab vedotin + pembrolizumab, cycle 3 on 07/06/2026.\nHe has dysuria from tumor invasion unchanged, but new painful diffuse blistering rash after enfortumab, glucose 290 after dexamethasone premed, and dry eyes/blurred vision after enfortumab.\n- Ophtho: keratitis, no retinal mets.\n- Labs: Cr 1.2, Hb 10.4, ANC 2.8, ALT 40, HbA1c old 5.6.\n- No mucosal sloughing, no fever, no diarrhea.\nExam: bullous lesions <10% BSA, conjunctival injection, abdomen soft.\nAssessment: enfortumab severe skin reaction and ocular toxicity; steroid hyperglycemia; dysuria disease related.\nplan\nhold enfortumab, dermatology, lubricating drops, insulin PRN, continue pembrolizumab only after rash improves.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "painful diffuse blistering rash",
+          "normalized_reaction": "Bullous dermatitis",
+          "suspected_drug": "enfortumab",
+          "drug_class": "antibody-drug conjugate",
+          "evidence_quote": "new painful diffuse blistering rash after enfortumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The blistering rash is new after enfortumab and is assessed as enfortumab severe skin reaction."
+        },
+        {
+          "reaction_text": "glucose 290",
+          "normalized_reaction": "Hyperglycaemia",
+          "suspected_drug": "dexamethasone",
+          "drug_class": "corticosteroid",
+          "evidence_quote": "glucose 290 after dexamethasone premed",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Hyperglycemia occurred after dexamethasone premedication and is assessed as steroid hyperglycemia."
+        },
+        {
+          "reaction_text": "dry eyes/blurred vision",
+          "normalized_reaction": "Keratitis",
+          "suspected_drug": "enfortumab",
+          "drug_class": "antibody-drug conjugate",
+          "evidence_quote": "dry eyes/blurred vision after enfortumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Dry eyes and blurred vision occurred after enfortumab and ophthalmology found keratitis."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "dysuria",
+          "normalized_event": "Dysuria",
+          "evidence_quote": "dysuria from tumor invasion unchanged",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no retinal mets",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "No mucosal sloughing",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "lubricating drops",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "insulin PRN",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-021",
+    "note_type": "ER",
+    "adr_count": 4,
+    "note_text": "STATUS POST:\nmetastatic HCC on atezolizumab/bevacizumab, also on spironolactone for ascites and TMP-SMX prophylaxis after steroids\nCHIEF COMPLAIN:\ncame to er for melena, high LFT, high K, weakness and abd distension\nmelena started while on bevacizumab, Hb dropped 11.0 to 8.1; ALT 520 after atezolizumab, viral hepatitis screen neg; K 6.2 after TMP-SMX added to spironolactone; Cr 1.6 after TMP-SMX\nabd distension same chronic ascites from cirrhosis, no hematemesis, no diarrhea\nVITAL SIGNS:\n T: 98.7 F (37.1 C)\n P: 112\n R: 20\n B/P: 96/58\n Pulse Oximetry: 97%\nPAIN SCORE: 3/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n MELENA ON PR, ABD DISTENDED SOFT\n NO ASTERIXIS\nASSESSMENT AND CONCLUSION:\nbevacizumab related GI bleed, immune hepatitis, TMP-SMX renal injury, hyperkalemia due TMP-SMX/spironolactone interaction\nPLAN OF CARE:\nhold atezo/bev, IV PPI, stop TMP-SMX and spironolactone, calcium gluconate/insulin dextrose, prednisone after infection excluded\n/es/ Mira Farah, MD\nSigned: 07/13/2026 00:40",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "melena",
+          "normalized_reaction": "Gastrointestinal haemorrhage",
+          "suspected_drug": "bevacizumab",
+          "drug_class": "VEGF inhibitor",
+          "evidence_quote": "melena started while on bevacizumab",
+          "temporality": "during_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Melena started while on bevacizumab and is assessed as bevacizumab related GI bleed."
+        },
+        {
+          "reaction_text": "ALT 520",
+          "normalized_reaction": "Hepatitis",
+          "suspected_drug": "atezolizumab",
+          "drug_class": "PD-L1 inhibitor",
+          "evidence_quote": "ALT 520 after atezolizumab",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "ALT elevation occurred after atezolizumab with negative viral screen and is assessed as immune hepatitis."
+        },
+        {
+          "reaction_text": "K 6.2",
+          "normalized_reaction": "Hyperkalaemia",
+          "suspected_drug": "TMP-SMX added to spironolactone",
+          "drug_class": "sulfonamide antibiotic and potassium-sparing diuretic",
+          "evidence_quote": "K 6.2 after TMP-SMX added to spironolactone",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Hyperkalemia occurred after TMP-SMX was added to spironolactone and is assessed as an interaction."
+        },
+        {
+          "reaction_text": "Cr 1.6",
+          "normalized_reaction": "Renal impairment",
+          "suspected_drug": "TMP-SMX",
+          "drug_class": "sulfonamide antibiotic",
+          "evidence_quote": "Cr 1.6 after TMP-SMX",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Creatinine rose after TMP-SMX and is assessed as TMP-SMX renal injury."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "abd distension",
+          "normalized_event": "Abdominal distension",
+          "evidence_quote": "abd distension same chronic ascites from cirrhosis",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "weakness",
+          "normalized_event": "Asthenia",
+          "evidence_quote": "weakness",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "viral hepatitis screen neg",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "no hematemesis",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "IV PPI",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "calcium gluconate/insulin dextrose",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-022",
+    "note_type": "consultant",
+    "adr_count": 4,
+    "note_text": "AUTHOR: Faris Mdanat STATUS: COMPLETED\nA 33 year old gentleman, a case of germ cell tumor, on BEP, cycle 2 day 15 on 07/07/2026.\nComplaints are mixed: cancer back pain unchanged, anxiety-related chest tightness before chemo, but Cr 1.9 after cisplatin, Mg 0.8 after cisplatin, tinnitus after cisplatin, and dry cough/SOB with DLCO drop after bleomycin.\n- CTA: no PE, no infection consolidation; HRCT subtle basal interstitial opacity.\n- Labs: Cr baseline 0.8 now 1.9, Mg 0.8, Hb 11.9, WBC 3.2.\n- no fever, no sputum, no hematuria.\nExam: fine basal crackles, abdomen soft, PS 1.\nAssessment: cisplatin nephrotoxicity, cisplatin hypomagnesemia, cisplatin ototoxicity, probable bleomycin pneumonitis.\nplan\nstop bleomycin, hold cisplatin today, IV Mg/hydration, audiogram, repeat PFT.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "Cr 1.9",
+          "normalized_reaction": "Acute kidney injury",
+          "suspected_drug": "cisplatin",
+          "drug_class": "platinum agent",
+          "evidence_quote": "Cr 1.9 after cisplatin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Creatinine rose after cisplatin and is assessed as cisplatin nephrotoxicity."
+        },
+        {
+          "reaction_text": "Mg 0.8",
+          "normalized_reaction": "Hypomagnesaemia",
+          "suspected_drug": "cisplatin",
+          "drug_class": "platinum agent",
+          "evidence_quote": "Mg 0.8 after cisplatin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Low magnesium occurred after cisplatin and is assessed as cisplatin hypomagnesemia."
+        },
+        {
+          "reaction_text": "tinnitus",
+          "normalized_reaction": "Tinnitus",
+          "suspected_drug": "cisplatin",
+          "drug_class": "platinum agent",
+          "evidence_quote": "tinnitus after cisplatin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Tinnitus occurred after cisplatin and is assessed as cisplatin ototoxicity."
+        },
+        {
+          "reaction_text": "dry cough/SOB with DLCO drop",
+          "normalized_reaction": "Pneumonitis",
+          "suspected_drug": "bleomycin",
+          "drug_class": "antineoplastic antibiotic",
+          "evidence_quote": "dry cough/SOB with DLCO drop after bleomycin",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "Dry cough and SOB with DLCO drop occurred after bleomycin and are assessed as probable bleomycin pneumonitis."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "cancer back pain unchanged",
+          "normalized_event": "Back pain",
+          "evidence_quote": "cancer back pain unchanged",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "anxiety-related chest tightness before chemo",
+          "normalized_event": "Chest discomfort",
+          "evidence_quote": "anxiety-related chest tightness before chemo",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no PE",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no infection consolidation",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no sputum",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "IV Mg/hydration",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-023",
+    "note_type": "ER",
+    "adr_count": 4,
+    "note_text": "STATUS POST:\nmetastatic colon ca on CAPOX + bevacizumab, taking warfarin for AF, recently given clarithromycin for sinusitis\nCHIEF COMPLAIN:\ncame to er for hand pain, diarrhea, high INR and headache\npainful palms/soles with peeling after capecitabine; watery diarrhea 6/day after capecitabine, C diff neg; INR 6.4 after clarithromycin started while on warfarin; BP 184/106 since bevacizumab\nheadache likely from BP, no focal weakness, no GI bleeding\nVITAL SIGNS:\n T: 98.4 F (36.9 C)\n P: 92\n R: 18\n B/P: 184/106\n Pulse Oximetry: 98%\nPAIN SCORE: 7/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ORIENTED\n PALMAR PLANTAR PEELING, ABD SOFT\n NEURO GROSSLY INTACT\nASSESSMENT AND CONCLUSION:\ncapecitabine HFS + diarrhea, warfarin-clarithromycin interaction with high INR, bevacizumab hypertension\nPLAN OF CARE:\nhold capecitabine and bev, stop clarithromycin, vitamin K low dose, loperamide, topical urea\n/es/ Khaled Shannak, MD\nSigned: 07/14/2026 16:12",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "painful palms/soles with peeling",
+          "normalized_reaction": "Palmar-plantar erythrodysaesthesia syndrome",
+          "suspected_drug": "capecitabine",
+          "drug_class": "fluoropyrimidine antimetabolite",
+          "evidence_quote": "painful palms/soles with peeling after capecitabine",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Palmar-plantar peeling occurred after capecitabine and is assessed as capecitabine HFS."
+        },
+        {
+          "reaction_text": "watery diarrhea 6/day",
+          "normalized_reaction": "Diarrhoea",
+          "suspected_drug": "capecitabine",
+          "drug_class": "fluoropyrimidine antimetabolite",
+          "evidence_quote": "watery diarrhea 6/day after capecitabine",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Watery diarrhea followed capecitabine and is assessed as capecitabine diarrhea."
+        },
+        {
+          "reaction_text": "INR 6.4",
+          "normalized_reaction": "International normalised ratio increased",
+          "suspected_drug": "warfarin-clarithromycin",
+          "drug_class": "vitamin K antagonist and macrolide antibiotic",
+          "evidence_quote": "INR 6.4 after clarithromycin started while on warfarin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "INR rose after clarithromycin was started while on warfarin and the assessment states interaction."
+        },
+        {
+          "reaction_text": "BP 184/106",
+          "normalized_reaction": "Hypertension",
+          "suspected_drug": "bevacizumab",
+          "drug_class": "VEGF inhibitor",
+          "evidence_quote": "BP 184/106 since bevacizumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "The blood pressure elevation occurred since bevacizumab and is assessed as bevacizumab hypertension."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "headache",
+          "normalized_event": "Headache",
+          "evidence_quote": "headache likely from BP",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "C diff neg",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no focal weakness",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no GI bleeding",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "loperamide",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "topical urea",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-024",
+    "note_type": "consultant",
+    "adr_count": 4,
+    "note_text": "AUTHOR: Dana Shomali STATUS: COMPLETED\nA 66 year old lady, a case of metastatic breast ca, on ribociclib + letrozole, plus ondansetron PRN and levofloxacin recently for UTI.\nReview today confusing because she had palpitations before treatment, but ECG now QTc 530 after ribociclib with levofloxacin/ondansetron; ANC 0.8 after ribociclib; AST/ALT 210/188 after ribociclib; nausea improved with ondansetron.\n- Labs: K 4.0 Mg 2.0, bili 0.6, Cr 0.9.\n- UTI symptoms resolved, urine culture sterile.\nNo syncope, no fever, no jaundice.\nExam stable, no abdominal tenderness, PS 0.\nAssessment: ribociclib neutropenia and transaminitis, QT prolongation likely combined QT drugs; nausea not ADR today.\nplan\nhold ribociclib, stop levofloxacin/avoid ondansetron, repeat ECG/LFT/CBC in 1 week.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "QTc 530",
+          "normalized_reaction": "Electrocardiogram QT prolonged",
+          "suspected_drug": "ribociclib with levofloxacin/ondansetron",
+          "drug_class": "CDK4/6 inhibitor with fluoroquinolone antibiotic and 5-HT3 antagonist",
+          "evidence_quote": "QTc 530 after ribociclib with levofloxacin/ondansetron",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "high",
+          "reasoning_brief": "QTc prolongation occurred after combined QT-prolonging drugs and is assessed as likely combined QT drugs."
+        },
+        {
+          "reaction_text": "ANC 0.8",
+          "normalized_reaction": "Neutropenia",
+          "suspected_drug": "ribociclib",
+          "drug_class": "CDK4/6 inhibitor",
+          "evidence_quote": "ANC 0.8 after ribociclib",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Low ANC followed ribociclib and is assessed as ribociclib neutropenia."
+        },
+        {
+          "reaction_text": "AST/ALT 210/188",
+          "normalized_reaction": "Transaminases increased",
+          "suspected_drug": "ribociclib",
+          "drug_class": "CDK4/6 inhibitor",
+          "evidence_quote": "AST/ALT 210/188 after ribociclib",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Transaminases rose after ribociclib and are assessed as ribociclib transaminitis."
+        },
+        {
+          "reaction_text": "QT prolongation",
+          "normalized_reaction": "Long QT syndrome",
+          "suspected_drug": "combined QT drugs",
+          "drug_class": "multiple QT-prolonging drugs",
+          "evidence_quote": "QT prolongation likely combined QT drugs",
+          "temporality": "during_drug",
+          "causality_assertion": "probable",
+          "confidence": "medium",
+          "reasoning_brief": "The assessment attributes QT prolongation to the combined QT drugs."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "palpitations before treatment",
+          "normalized_event": "Palpitations",
+          "evidence_quote": "palpitations before treatment",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "nausea",
+          "normalized_event": "Nausea",
+          "evidence_quote": "nausea improved with ondansetron",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "nausea improved with ondansetron",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "No syncope",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no jaundice",
+          "why_not_adr": "negated"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-025",
+    "note_type": "ER",
+    "adr_count": 4,
+    "note_text": "STATUS POST:\nrelapsed AML on venetoclax/azacitidine, posaconazole prophylaxis added, also linezolid for VRE and sertraline home med\nCHIEF COMPLAIN:\ncame to er for severe weakness, bruising, tremor/clonus, high ven level suspected\nANC 0.2 after venetoclax/azacitidine; Plt 22 after azacitidine but also linezolid may contribute; profound fatigue and mucositis worsened after posaconazole was added with venetoclax not dose reduced; tremor/clonus after linezolid + sertraline\nno active bleeding, no seizure, no fever today\nVITAL SIGNS:\n T: 98.9 F (37.2 C)\n P: 112\n R: 20\n B/P: 118/70\n Pulse Oximetry: 97%\nPAIN SCORE: 4/10\nPHYSICAL EXAM:\n PT CONSCIOUS, ANXIOUS\n ORAL ULCERS, ECCHYMOSES ARMS\n CLONUS BOTH FEET, ABD SOFT\nASSESSMENT AND CONCLUSION:\nven/aza myelosuppression with neutropenia and thrombocytopenia, venetoclax-posaconazole excess toxicity causing mucositis/fatigue, serotonin syndrome from linezolid/sertraline\nPLAN OF CARE:\nhold venetoclax/aza/linezolid, adjust posa interaction, platelet transfusion if bleeding, supportive mouth care\n/es/ Reem AlKarmi, MD\nSigned: 07/15/2026 06:07",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "ANC 0.2",
+          "normalized_reaction": "Neutropenia",
+          "suspected_drug": "venetoclax/azacitidine",
+          "drug_class": "BCL-2 inhibitor and hypomethylating agent",
+          "evidence_quote": "ANC 0.2 after venetoclax/azacitidine",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Low ANC occurred after venetoclax/azacitidine and is assessed as ven/aza myelosuppression."
+        },
+        {
+          "reaction_text": "Plt 22",
+          "normalized_reaction": "Thrombocytopenia",
+          "suspected_drug": "azacitidine",
+          "drug_class": "hypomethylating agent",
+          "evidence_quote": "Plt 22 after azacitidine",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "medium",
+          "reasoning_brief": "Thrombocytopenia occurred after azacitidine and is included in ven/aza myelosuppression."
+        },
+        {
+          "reaction_text": "mucositis",
+          "normalized_reaction": "Mucositis oral",
+          "suspected_drug": "venetoclax-posaconazole",
+          "drug_class": "BCL-2 inhibitor and azole antifungal",
+          "evidence_quote": "mucositis worsened after posaconazole was added with venetoclax not dose reduced",
+          "temporality": "after_drug",
+          "causality_assertion": "probable",
+          "confidence": "medium",
+          "reasoning_brief": "Mucositis worsened after posaconazole was added without venetoclax dose reduction and is assessed as excess toxicity."
+        },
+        {
+          "reaction_text": "tremor/clonus",
+          "normalized_reaction": "Serotonin syndrome",
+          "suspected_drug": "linezolid + sertraline",
+          "drug_class": "oxazolidinone antibiotic and SSRI",
+          "evidence_quote": "tremor/clonus after linezolid + sertraline",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Tremor and clonus occurred after linezolid plus sertraline and are assessed as serotonin syndrome."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "bruising",
+          "normalized_event": "Contusion",
+          "evidence_quote": "came to er for severe weakness, bruising, tremor/clonus",
+          "reason_not_linked_to_drug": "unclear"
+        },
+        {
+          "event_text": "profound fatigue",
+          "normalized_event": "Fatigue",
+          "evidence_quote": "profound fatigue",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no active bleeding",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no seizure",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever today",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "platelet transfusion if bleeding",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "supportive mouth care",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-026",
+    "note_type": "consultant",
+    "adr_count": 5,
+    "note_text": "AUTHOR: Leila Haddadin STATUS: COMPLETED\nA 58 year old lady, a case of metastatic gastric ca, on nivolumab + FOLFOX, cycle 9 on 07/04/2026, with apixaban for old PE.\nHard to separate disease sx: appetite loss and epigastric pain predate treatment; ascites is malignant. However she developed watery diarrhea 10/day after nivolumab, TSH 24 with fatigue after nivolumab, numb/cold painful fingers after oxaliplatin, Plt 52 after oxaliplatin/5FU, and melena while on apixaban.\n- Stool PCR negative, CT no colitis perforation, Hb 8.8 from 10.5, Cr 0.9.\n- no fever, no hematemesis, no bowel obstruction.\nExam: mild dehydration, fingertip dysesthesia, abdomen distended but soft.\nAssessment: immune colitis + immune hypothyroidism, oxaliplatin neuropathy, chemo thrombocytopenia, apixaban GI bleed.\nplan\nhold nivo/chemo/apixaban, prednisone, levothyroxine, IV PPI, platelet monitoring, loperamide only after infection ruled out.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "watery diarrhea 10/day",
+          "normalized_reaction": "Colitis",
+          "suspected_drug": "nivolumab",
+          "drug_class": "PD-1 inhibitor",
+          "evidence_quote": "watery diarrhea 10/day after nivolumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Watery diarrhea occurred after nivolumab and is assessed as immune colitis."
+        },
+        {
+          "reaction_text": "TSH 24 with fatigue",
+          "normalized_reaction": "Hypothyroidism",
+          "suspected_drug": "nivolumab",
+          "drug_class": "PD-1 inhibitor",
+          "evidence_quote": "TSH 24 with fatigue after nivolumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Elevated TSH with fatigue occurred after nivolumab and is assessed as immune hypothyroidism."
+        },
+        {
+          "reaction_text": "numb/cold painful fingers",
+          "normalized_reaction": "Peripheral sensory neuropathy",
+          "suspected_drug": "oxaliplatin",
+          "drug_class": "platinum agent",
+          "evidence_quote": "numb/cold painful fingers after oxaliplatin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Cold painful numb fingers occurred after oxaliplatin and are assessed as oxaliplatin neuropathy."
+        },
+        {
+          "reaction_text": "Plt 52",
+          "normalized_reaction": "Thrombocytopenia",
+          "suspected_drug": "oxaliplatin/5FU",
+          "drug_class": "cytotoxic chemotherapy",
+          "evidence_quote": "Plt 52 after oxaliplatin/5FU",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Platelets dropped after oxaliplatin/5FU and are assessed as chemo thrombocytopenia."
+        },
+        {
+          "reaction_text": "melena",
+          "normalized_reaction": "Gastrointestinal haemorrhage",
+          "suspected_drug": "apixaban",
+          "drug_class": "factor Xa inhibitor anticoagulant",
+          "evidence_quote": "melena while on apixaban",
+          "temporality": "during_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Melena occurred while on apixaban and is assessed as apixaban GI bleed."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "appetite loss and epigastric pain",
+          "normalized_event": "Cancer pain",
+          "evidence_quote": "appetite loss and epigastric pain predate treatment",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        },
+        {
+          "event_text": "ascites",
+          "normalized_event": "Ascites",
+          "evidence_quote": "ascites is malignant",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "Stool PCR negative",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no hematemesis",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no bowel obstruction",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "prednisone",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "levothyroxine",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "IV PPI",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-027",
+    "note_type": "ER",
+    "adr_count": 5,
+    "note_text": "STATUS POST:\nAML consolidation, on vancomycin + cefepime for FN, posaconazole prophylaxis, oxycodone PRN, metoclopramide scheduled\nCHIEF COMPLAIN:\ncame to er for AKI, confusion/movements, rash, constipation\nCr 2.6 after vancomycin trough 31; red flushing and pruritus during vancomycin infusion yesterday; acute dystonia/oculogyric crisis after metoclopramide; diffuse maculopapular rash after cefepime; severe constipation after oxycodone escalation\nconfusion partly sleep deprivation but dystonia seen; no hypotension, no mucosal lesions, no diarrhea\nVITAL SIGNS:\n T: 99.1 F (37.3 C)\n P: 104\n R: 18\n B/P: 116/72\n Pulse Oximetry: 97%\nPAIN SCORE: 5/10\nPHYSICAL EXAM:\n PT CONSCIOUS, INTERMITTENT EYE DEVIATION\n TRUNK MORBILLIFORM RASH\n ABD DISTENDED, BOWEL SOUNDS SLOW\nASSESSMENT AND CONCLUSION:\nvancomycin nephrotoxicity + infusion reaction, metoclopramide EPS, cefepime drug rash, opioid constipation\nPLAN OF CARE:\nhold vanco/cefepime/metoclopramide, benztropine, bowel regimen, renal dosing, switch abx\n/es/ Dima Kanaan, MD\nSigned: 07/16/2026 09:59",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "Cr 2.6",
+          "normalized_reaction": "Acute kidney injury",
+          "suspected_drug": "vancomycin",
+          "drug_class": "glycopeptide antibiotic",
+          "evidence_quote": "Cr 2.6 after vancomycin trough 31",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Creatinine rose after a high vancomycin trough and is assessed as vancomycin nephrotoxicity."
+        },
+        {
+          "reaction_text": "red flushing and pruritus",
+          "normalized_reaction": "Infusion related reaction",
+          "suspected_drug": "vancomycin",
+          "drug_class": "glycopeptide antibiotic",
+          "evidence_quote": "red flushing and pruritus during vancomycin infusion yesterday",
+          "temporality": "during_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Flushing and pruritus occurred during vancomycin infusion and are assessed as an infusion reaction."
+        },
+        {
+          "reaction_text": "acute dystonia/oculogyric crisis",
+          "normalized_reaction": "Extrapyramidal disorder",
+          "suspected_drug": "metoclopramide",
+          "drug_class": "dopamine antagonist antiemetic",
+          "evidence_quote": "acute dystonia/oculogyric crisis after metoclopramide",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Dystonia and oculogyric crisis occurred after metoclopramide and are assessed as metoclopramide EPS."
+        },
+        {
+          "reaction_text": "diffuse maculopapular rash",
+          "normalized_reaction": "Rash maculo-papular",
+          "suspected_drug": "cefepime",
+          "drug_class": "cephalosporin antibiotic",
+          "evidence_quote": "diffuse maculopapular rash after cefepime",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Diffuse maculopapular rash occurred after cefepime and is assessed as cefepime drug rash."
+        },
+        {
+          "reaction_text": "severe constipation",
+          "normalized_reaction": "Constipation",
+          "suspected_drug": "oxycodone",
+          "drug_class": "opioid analgesic",
+          "evidence_quote": "severe constipation after oxycodone escalation",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Severe constipation followed oxycodone escalation and is assessed as opioid constipation."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "confusion",
+          "normalized_event": "Confusional state",
+          "evidence_quote": "confusion partly sleep deprivation",
+          "reason_not_linked_to_drug": "unclear"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no hypotension",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no mucosal lesions",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "benztropine",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "bowel regimen",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-028",
+    "note_type": "consultant",
+    "adr_count": 5,
+    "note_text": "AUTHOR: Ziad Tannous STATUS: COMPLETED\nA 70 year old gentleman, a case of metastatic prostate ca, on docetaxel + prednisone, denosumab monthly, amiodarone, and recent levofloxacin for bronchitis.\nNo cancer progression on CT. Today: leg edema after docetaxel despite stable albumin, glucose 402 after prednisone, Ca 6.8 after denosumab, QTc 540 after levofloxacin added to amiodarone, and black stool after naproxen self-medication for bone pain.\n- Hb 8.9 from 10.9, Mg 1.7, K 4.1, Cr 1.0, albumin 3.8.\n- cough improved on antibiotic; no syncope, no hematemesis, no diarrhea.\nExam: edema to knees, mild epigastric tenderness, no focal neuro deficit.\nAssessment: docetaxel fluid retention, steroid hyperglycemia, denosumab hypocalcemia, QT drug interaction, NSAID related upper GI bleed.\nplan\nhold docetaxel, insulin, calcium/vit D, stop levofloxacin and naproxen, IV PPI, ECG monitoring.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "leg edema",
+          "normalized_reaction": "Fluid retention",
+          "suspected_drug": "docetaxel",
+          "drug_class": "taxane chemotherapy",
+          "evidence_quote": "leg edema after docetaxel despite stable albumin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Leg edema occurred after docetaxel despite stable albumin and is assessed as docetaxel fluid retention."
+        },
+        {
+          "reaction_text": "glucose 402",
+          "normalized_reaction": "Hyperglycaemia",
+          "suspected_drug": "prednisone",
+          "drug_class": "corticosteroid",
+          "evidence_quote": "glucose 402 after prednisone",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Glucose 402 occurred after prednisone and is assessed as steroid hyperglycemia."
+        },
+        {
+          "reaction_text": "Ca 6.8",
+          "normalized_reaction": "Hypocalcaemia",
+          "suspected_drug": "denosumab",
+          "drug_class": "RANKL inhibitor",
+          "evidence_quote": "Ca 6.8 after denosumab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Calcium was low after denosumab and is assessed as denosumab hypocalcemia."
+        },
+        {
+          "reaction_text": "QTc 540",
+          "normalized_reaction": "Electrocardiogram QT prolonged",
+          "suspected_drug": "levofloxacin added to amiodarone",
+          "drug_class": "fluoroquinolone antibiotic and antiarrhythmic",
+          "evidence_quote": "QTc 540 after levofloxacin added to amiodarone",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "QTc prolongation occurred after levofloxacin was added to amiodarone and is assessed as a QT drug interaction."
+        },
+        {
+          "reaction_text": "black stool",
+          "normalized_reaction": "Upper gastrointestinal haemorrhage",
+          "suspected_drug": "naproxen",
+          "drug_class": "nonsteroidal anti-inflammatory drug",
+          "evidence_quote": "black stool after naproxen self-medication for bone pain",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Black stool occurred after naproxen self-medication and is assessed as NSAID related upper GI bleed."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "cough",
+          "normalized_event": "Cough",
+          "evidence_quote": "cough improved on antibiotic",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "bone pain",
+          "normalized_event": "Bone pain",
+          "evidence_quote": "bone pain",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "cough improved on antibiotic",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "no syncope",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no hematemesis",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no diarrhea",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "insulin",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "calcium/vit D",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "IV PPI",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-029",
+    "note_type": "ER",
+    "adr_count": 5,
+    "note_text": "STATUS POST:\nB-ALL on blinatumomab continuous infusion day 2, premed dexamethasone, levetiracetam prophylaxis, morphine for mucositis pain\nCHIEF COMPLAIN:\nrapid response to er area for fever/hypotension during blinatumomab infusion, confusion/word finding difficulty after blinatumomab, seizure-like twitching after blinatumomab, glucose 378 after dexamethasone, and drowsy RR 7 after morphine rescue dose\nold headaches predate infusion; no neck stiffness, no positive culture yet\nVITAL SIGNS:\n T: 103.1 F (39.5 C)\n P: 140\n R: 7\n B/P: 82/48\n Pulse Oximetry: 89%\nPAIN SCORE: 1/10\nPHYSICAL EXAM:\n DROWSY, DISORIENTED TO DATE\n INTERMITTENT MYOCLONUS, NO MENINGEAL SIGN\n CHEST CLEAR, ABD SOFT\nASSESSMENT AND CONCLUSION:\nblinatumomab CRS with ICANS/neurotoxicity and seizure activity, steroid hyperglycemia, opioid respiratory depression\n*PLAN OF CARE:\nstop blina, ICU, tocilizumab, dex per CRS protocol, naloxone titration, insulin infusion, EEG\n/es/ Amer Halabi, MD\nSigned: 07/17/2026 22:11",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "fever/hypotension",
+          "normalized_reaction": "Cytokine release syndrome",
+          "suspected_drug": "blinatumomab",
+          "drug_class": "bispecific T-cell engager",
+          "evidence_quote": "fever/hypotension during blinatumomab infusion",
+          "temporality": "during_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Fever and hypotension occurred during blinatumomab infusion and are assessed as CRS."
+        },
+        {
+          "reaction_text": "confusion/word finding difficulty",
+          "normalized_reaction": "Immune effector cell-associated neurotoxicity syndrome",
+          "suspected_drug": "blinatumomab",
+          "drug_class": "bispecific T-cell engager",
+          "evidence_quote": "confusion/word finding difficulty after blinatumomab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Confusion and word finding difficulty occurred after blinatumomab and are assessed as ICANS/neurotoxicity."
+        },
+        {
+          "reaction_text": "seizure-like twitching",
+          "normalized_reaction": "Seizure",
+          "suspected_drug": "blinatumomab",
+          "drug_class": "bispecific T-cell engager",
+          "evidence_quote": "seizure-like twitching after blinatumomab",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "medium",
+          "reasoning_brief": "Seizure-like twitching occurred after blinatumomab and the assessment mentions seizure activity."
+        },
+        {
+          "reaction_text": "glucose 378",
+          "normalized_reaction": "Hyperglycaemia",
+          "suspected_drug": "dexamethasone",
+          "drug_class": "corticosteroid",
+          "evidence_quote": "glucose 378 after dexamethasone",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Glucose 378 occurred after dexamethasone and is assessed as steroid hyperglycemia."
+        },
+        {
+          "reaction_text": "drowsy RR 7",
+          "normalized_reaction": "Respiratory depression",
+          "suspected_drug": "morphine",
+          "drug_class": "opioid analgesic",
+          "evidence_quote": "drowsy RR 7 after morphine rescue dose",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Drowsiness with RR 7 occurred after morphine rescue dose and is assessed as opioid respiratory depression."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "old headaches",
+          "normalized_event": "Headache",
+          "evidence_quote": "old headaches predate infusion",
+          "reason_not_linked_to_drug": "temporal_link_absent"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "no neck stiffness",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no positive culture yet",
+          "why_not_adr": "insufficient_evidence"
+        },
+        {
+          "text": "tocilizumab",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "dex per CRS protocol",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "naloxone titration",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "insulin infusion",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "SYN-030",
+    "note_type": "consultant",
+    "adr_count": 5,
+    "note_text": "AUTHOR: Sawsan Batarseh STATUS: COMPLETED\nA 63 year old lady, a case of metastatic NSCLC EGFR exon19, on osimertinib; admitted last week received azithromycin, enoxaparin prophylaxis, dexamethasone for brain edema, and nystatin started later.\nCurrent review: diarrhea after osimertinib is 5/day and worse than baseline IBS; acneiform rash after osimertinib; QTc 522 after osimertinib plus azithromycin; injection site hematoma after enoxaparin; oral candidiasis after dexamethasone course.\n- Brain mets edema causes baseline headache, unchanged; CT head no bleed.\n- Labs: K 4.3 Mg 2.1 Cr 0.8 ANC 4.0 Plt 190, glucose 210 not treated today.\n- no syncope, no fever, no mucosal bleeding.\nExam: mild facial papules, white oral plaques, bruised abdomen injection site, abdomen soft.\nAssessment: osimertinib diarrhea/rash, QT interaction with azithro, LMWH hematoma, steroid thrush; headache due brain mets.\nplan\ncontinue osimertinib with dose review, stop azithro, ECG in 48h, nystatin, rotate injection site, avoid loperamide until stool test if fever.",
+    "gold": {
+      "suspected_adr_signals": [
+        {
+          "reaction_text": "diarrhea",
+          "normalized_reaction": "Diarrhoea",
+          "suspected_drug": "osimertinib",
+          "drug_class": "EGFR tyrosine kinase inhibitor",
+          "evidence_quote": "diarrhea after osimertinib is 5/day and worse than baseline IBS",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Diarrhea occurred after osimertinib and is worse than baseline IBS, and is assessed as osimertinib diarrhea."
+        },
+        {
+          "reaction_text": "acneiform rash",
+          "normalized_reaction": "Dermatitis acneiform",
+          "suspected_drug": "osimertinib",
+          "drug_class": "EGFR tyrosine kinase inhibitor",
+          "evidence_quote": "acneiform rash after osimertinib",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Acneiform rash occurred after osimertinib and is assessed as osimertinib rash."
+        },
+        {
+          "reaction_text": "QTc 522",
+          "normalized_reaction": "Electrocardiogram QT prolonged",
+          "suspected_drug": "osimertinib plus azithromycin",
+          "drug_class": "EGFR tyrosine kinase inhibitor and macrolide antibiotic",
+          "evidence_quote": "QTc 522 after osimertinib plus azithromycin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "QTc prolongation occurred after osimertinib plus azithromycin and is assessed as a QT interaction."
+        },
+        {
+          "reaction_text": "injection site hematoma",
+          "normalized_reaction": "Injection site haematoma",
+          "suspected_drug": "enoxaparin",
+          "drug_class": "low molecular weight heparin anticoagulant",
+          "evidence_quote": "injection site hematoma after enoxaparin",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Injection site hematoma occurred after enoxaparin and is assessed as LMWH hematoma."
+        },
+        {
+          "reaction_text": "oral candidiasis",
+          "normalized_reaction": "Oral candidiasis",
+          "suspected_drug": "dexamethasone",
+          "drug_class": "corticosteroid",
+          "evidence_quote": "oral candidiasis after dexamethasone course",
+          "temporality": "after_drug",
+          "causality_assertion": "explicit",
+          "confidence": "high",
+          "reasoning_brief": "Oral candidiasis occurred after dexamethasone course and is assessed as steroid thrush."
+        }
+      ],
+      "unlinked_adverse_events": [
+        {
+          "event_text": "baseline headache",
+          "normalized_event": "Headache",
+          "evidence_quote": "Brain mets edema causes baseline headache",
+          "reason_not_linked_to_drug": "better_explained_by_illness"
+        },
+        {
+          "event_text": "glucose 210",
+          "normalized_event": "Hyperglycaemia",
+          "evidence_quote": "glucose 210 not treated today",
+          "reason_not_linked_to_drug": "no_drug_link_stated"
+        }
+      ],
+      "negative_controls": [
+        {
+          "text": "nystatin started later",
+          "why_not_adr": "medication_treats_symptom"
+        },
+        {
+          "text": "CT head no bleed",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no syncope",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no fever",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "no mucosal bleeding",
+          "why_not_adr": "negated"
+        },
+        {
+          "text": "nystatin",
+          "why_not_adr": "medication_treats_symptom"
+        }
+      ]
+    }
+  }
+]
