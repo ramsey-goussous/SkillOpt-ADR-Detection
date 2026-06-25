@@ -34,7 +34,24 @@ claude
 
 If the CLI asks you to log in, complete that first.
 
-## First Run
+## Click-To-Run Files
+
+On Windows, double-click one of these files from this folder:
+
+- `RUN_FROM_BASE.bat` - starts from the committed `skills/base_skill.md`.
+- `RUN_FROM_BEST.bat` - starts from `results/best_skill.md` after a previous successful run.
+- `PUSH_THIS_REPO.bat` - pushes this clean repo only; it refuses to run if the ADR runner files are missing.
+
+The run scripts set the usual defaults for you:
+
+- target model: `claude-sonnet-4-6`
+- optimizer model: `claude-sonnet-4-6`
+- epochs: `1`
+- per-note timeout: `240` seconds
+- per-note retries: `2`
+- test evaluation: off
+
+## First Run By Command
 
 From a fresh clone:
 
@@ -56,8 +73,10 @@ ADR environment and Windows Claude prompt handling, and run optimization.
 
 ## Continue From A New Best Skill
 
-After a successful run, this repo may contain `results/best_skill.md`. To start
-the next run from that generated skill:
+After a successful run, this repo may contain `results/best_skill.md`. The
+easiest continuation is to double-click `RUN_FROM_BEST.bat`.
+
+The equivalent command is:
 
 ```powershell
 cd "C:\path\to\ADR study Git"
@@ -83,5 +102,33 @@ The runner writes:
 - `results/run_logs/`
 - `results/sessions/`
 
+`results/RESULTS_SUMMARY.md` and `results/results.json` include:
+
+- starting score, ending score, best score, and improvement
+- SkillOpt training wall time
+- total runner elapsed time
+- total prompt, completion, and combined token counts when reported by SkillOpt
+
 The paper is not built by this project. Final paper writing should happen
 separately after you decide which run is reportable.
+
+## Push This Repo
+
+To avoid pushing the wrong folder, use `PUSH_THIS_REPO.bat`.
+
+The manual command version is:
+
+```powershell
+cd "C:\Users\user\OneDrive - Carleton University\ADR study Git"
+git status
+git remote add origin <your-empty-repo-url>
+git branch -M main
+git push -u origin main
+```
+
+If `origin` already exists, use this instead of `git remote add`:
+
+```powershell
+git remote set-url origin <your-empty-repo-url>
+git push -u origin main
+```

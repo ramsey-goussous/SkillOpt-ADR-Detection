@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
 RUN_DIR = ROOT / "external" / "SkillOpt" / "outputs" / "adr_run"
 RUN_STATUS = RESULTS / "run_status.json"
+RUN_SUMMARY = RUN_DIR / "summary.json"
 
 FATAL_PATTERNS = (
     "api_error_status",
@@ -177,9 +178,42 @@ def token_estimate(path: Path) -> int | None:
     return int(len(path.read_text(encoding="utf-8", errors="replace").split()) * 1.3)
 
 
+def fmt_seconds(seconds: object) -> str | None:
+    if not isinstance(seconds, (int, float)):
+        return None
+    total = int(round(float(seconds)))
+    hours, rem = divmod(total, 3600)
+    minutes, secs = divmod(rem, 60)
+    if hours:
+        return f"{hours}h {minutes}m {secs}s"
+    if minutes:
+        return f"{minutes}m {secs}s"
+    return f"{secs}s"
+
+
+def token_total(token_summary: dict) -> dict | None:
+    if not isinstance(token_summary, dict):
+        return None
+    total = token_summary.get("_total")
+    return total if isinstance(total, dict) else None
+
+
 def main() -> None:
     RESULTS.mkdir(parents=True, exist_ok=True)
     run_status = load_json(RUN_STATUS, {})
+    skillopt_summary = load_json(RUN_SUMMARY, {})
+    if not isinstance(skillopt_summary, dict):
+        skillopt_summary = {}
+    token_summary = skillopt_summary.get("token_summary", {})
+    if not isinstance(token_summary, dict):
+        token_summary = {}
+    total_tokens = token_total(token_summary)
+    training_wall_time_s = skillopt_summary.get("total_wall_time_s")
+    runner_elapsed_s = (
+        run_status.get("runner_elapsed_seconds")
+        if isinstance(run_status, dict)
+        else None
+    )
     errors = scan_errors()
     if isinstance(run_status, dict) and run_status.get("train_exit_code") not in (None, 0):
         errors.insert(0, {
@@ -209,6 +243,10 @@ def main() -> None:
         "dataset": dataset_summary(),
         "skill_source": run_status.get("skill_source") if isinstance(run_status, dict) else None,
         "best_skill_tokens": token_estimate(RUN_DIR / "best_skill.md") if valid else None,
+        "training_wall_time_s": training_wall_time_s,
+        "runner_elapsed_seconds": runner_elapsed_s,
+        "token_summary": token_summary,
+        "total_tokens": total_tokens,
         "errors": errors[:20],
         "run_status": run_status,
     }
@@ -224,6 +262,18 @@ def main() -> None:
             "",
             f"- Fatal operational errors found: {len(fatal_errors)}",
         ])
+        if fmt_seconds(training_wall_time_s) or fmt_seconds(runner_elapsed_s):
+            lines.append(
+                f"- Time spent: training={fmt_seconds(training_wall_time_s) or 'n/a'}, "
+                f"runner={fmt_seconds(runner_elapsed_s) or 'n/a'}."
+            )
+        if total_tokens:
+            lines.append(
+                f"- Tokens consumed before failure: {total_tokens.get('total_tokens', 0):,} "
+                f"(prompt={total_tokens.get('prompt_tokens', 0):,}, "
+                f"completion={total_tokens.get('completion_tokens', 0):,}, "
+                f"calls={total_tokens.get('calls', 0):,})."
+            )
         for err in fatal_errors[:3]:
             lines.append(f"- `{err['path']}` note `{err['id']}`: {err['reason']}")
         if start is not None or best is not None or end is not None:
@@ -243,6 +293,18 @@ def main() -> None:
         lines.append(f"- Best score: {result['best_score']}")
         lines.append(f"- Ending score: {result['ending_score']}")
         lines.append(f"- Improvement: {result['improvement']:+.4f}")
+        if fmt_seconds(training_wall_time_s) or fmt_seconds(runner_elapsed_s):
+            lines.append(
+                f"- Time spent: training={fmt_seconds(training_wall_time_s) or 'n/a'}, "
+                f"runner={fmt_seconds(runner_elapsed_s) or 'n/a'}."
+            )
+        if total_tokens:
+            lines.append(
+                f"- Tokens consumed: {total_tokens.get('total_tokens', 0):,} "
+                f"(prompt={total_tokens.get('prompt_tokens', 0):,}, "
+                f"completion={total_tokens.get('completion_tokens', 0):,}, "
+                f"calls={total_tokens.get('calls', 0):,})."
+            )
         if result["best_skill_tokens"]:
             lines.append(f"- Best skill length: about {result['best_skill_tokens']} tokens.")
 

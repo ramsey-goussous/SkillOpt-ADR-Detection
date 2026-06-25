@@ -11,11 +11,13 @@ $skillopt = Join-Path $ROOT "external\SkillOpt"
 $resultsDir = Join-Path $ROOT "results"
 $logDir = Join-Path $resultsDir "run_logs"
 $SkillOptCommit = "6940e46f4e0e537a1d7ca8432f24248d0d3550f5"
+$script:RunStart = Get-Date
 
 $TargetModel = if ($env:TARGET_MODEL) { $env:TARGET_MODEL } else { "claude-sonnet-4-6" }
 $OptimizerModel = if ($env:OPTIMIZER_MODEL) { $env:OPTIMIZER_MODEL } else { "claude-sonnet-4-6" }
 $Epochs = if ($env:NUM_EPOCHS) { [int]$env:NUM_EPOCHS } else { 1 }
 $RunTestEval = if ($env:RUN_TEST_EVAL -eq "1") { "true" } else { "false" }
+$LaunchMode = if ($env:ADR_RUN_MODE) { $env:ADR_RUN_MODE } else { "manual" }
 
 function Section($Number, $Title) {
     Write-Host ""
@@ -72,6 +74,8 @@ function Remove-TreeInside($Path, $AllowedRoot) {
 }
 
 function Write-RunStatus($ExitCode, $IsValid, $ErrorMessage) {
+    $now = Get-Date
+    $elapsed = [math]::Round(($now - $script:RunStart).TotalSeconds, 1)
     $status = [ordered]@{
         ran = $true
         train_exit_code = $ExitCode
@@ -82,6 +86,10 @@ function Write-RunStatus($ExitCode, $IsValid, $ErrorMessage) {
         num_epochs = $Epochs
         skill_source = $script:skillSource
         run_test_eval = $RunTestEval
+        launch_mode = $LaunchMode
+        run_start_iso = $script:RunStart.ToString("o")
+        run_status_updated_iso = $now.ToString("o")
+        runner_elapsed_seconds = $elapsed
         error_message = $ErrorMessage
     }
     $status | ConvertTo-Json -Depth 4 | Set-Content -Encoding UTF8 $script:statusPath
@@ -135,6 +143,7 @@ try {
     Info "optimizer model: $OptimizerModel"
     Info "epochs: $Epochs"
     Info "test evaluation during training: $RunTestEval"
+    Info "launch mode: $LaunchMode"
     if ($env:ADR_EXEC_TIMEOUT) { Info "per-note model timeout: $env:ADR_EXEC_TIMEOUT seconds" }
     if ($env:ADR_MODEL_RETRIES) { Info "per-note model retries: $env:ADR_MODEL_RETRIES" }
 
