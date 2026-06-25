@@ -40,7 +40,6 @@ On Windows, double-click one of these files from this folder:
 
 - `RUN_FROM_BASE.bat` - starts from the committed `skills/base_skill.md`.
 - `RUN_FROM_BEST.bat` - starts from `results/best_skill.md` after a previous successful run.
-- `PUSH_THIS_REPO.bat` - pushes this clean repo only; it refuses to run if the ADR runner files are missing.
 
 The run scripts set the usual defaults for you:
 
@@ -111,24 +110,3 @@ The runner writes:
 
 The paper is not built by this project. Final paper writing should happen
 separately after you decide which run is reportable.
-
-## Push This Repo
-
-To avoid pushing the wrong folder, use `PUSH_THIS_REPO.bat`.
-
-The manual command version is:
-
-```powershell
-cd "C:\Users\user\OneDrive - Carleton University\ADR study Git"
-git status
-git remote add origin <your-empty-repo-url>
-git branch -M main
-git push -u origin main
-```
-
-If `origin` already exists, use this instead of `git remote add`:
-
-```powershell
-git remote set-url origin <your-empty-repo-url>
-git push -u origin main
-```
