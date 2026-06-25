@@ -88,16 +88,22 @@ def process_one(item: dict, out_root: str, skill_content: str, exec_timeout: int
         resp_text, _ = chat_target(system=system, user=user, max_completion_tokens=2000,
                                    retries=retries, stage="rollout", timeout=exec_timeout)
         prediction = _parse_json(resp_text, nid)
-        ev = evaluate(prediction, item)
-        res.update({"response": resp_text, "agent_ok": True,
-                    "hard": ev["hard"], "soft": ev["soft"],
-                    "pair_f1": ev["pair_f1"], "negative_note_precision": ev["negative_note_precision"]})
-        if ev["hard"] < 1:
-            res["fail_reason"] = (f"pair_f1={ev['pair_f1']:.2f} neg_prec={ev['negative_note_precision']:.2f}")
+        if isinstance(item.get("gold"), dict):
+            ev = evaluate(prediction, item)
+            res.update({"response": resp_text, "agent_ok": True, "scored": True,
+                        "hard": ev["hard"], "soft": ev["soft"],
+                        "pair_f1": ev["pair_f1"], "negative_note_precision": ev["negative_note_precision"]})
+            if ev["hard"] < 1:
+                res["fail_reason"] = (f"pair_f1={ev['pair_f1']:.2f} neg_prec={ev['negative_note_precision']:.2f}")
+            eval_detail = (f"[EVALUATION]\nnote_id: {nid}\nsoft(composite)={ev['soft']:.4f}  "
+                           f"pair_f1={ev['pair_f1']:.4f}  neg_note_precision={ev['negative_note_precision']:.4f}")
+        else:
+            res.update({"response": resp_text, "agent_ok": True, "scored": False,
+                        "hard": 0, "soft": 0.0,
+                        "fail_reason": "unlabeled_real_data_prediction_only"})
+            eval_detail = f"[PREDICTION ONLY]\nnote_id: {nid}\nNo gold labels were provided, so no score was computed."
         with open(os.path.join(pred_dir, "prediction.json"), "w", encoding="utf-8") as f:
             json.dump(prediction, f, ensure_ascii=False, indent=2)
-        eval_detail = (f"[EVALUATION]\nnote_id: {nid}\nsoft(composite)={ev['soft']:.4f}  "
-                       f"pair_f1={ev['pair_f1']:.4f}  neg_note_precision={ev['negative_note_precision']:.4f}")
         with open(os.path.join(pred_dir, "conversation.json"), "w", encoding="utf-8") as f:
             json.dump([{"role": "system", "content": system}, {"role": "user", "content": user},
                        {"role": "assistant", "content": resp_text}, {"role": "system", "content": eval_detail}],
@@ -126,7 +132,7 @@ def run_batch(items, out_root, skill_content, max_turns=1, exec_timeout=120, wor
     if not pending:
         return existing
     results = list(existing)
-    with open(results_path, "a") as outf:
+    with open(results_path, "a", encoding="utf-8") as outf:
         with ThreadPoolExecutor(max_workers=workers) as ex:
             futs = {ex.submit(process_one, it, out_root, skill_content, exec_timeout): it for it in pending}
             remaining = set(futs)

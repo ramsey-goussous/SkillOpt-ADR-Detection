@@ -1,0 +1,11 @@
+[
+  {
+    "id": "REAL_001",
+    "note_text": "De-identified clinical note text goes here.",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [],
+      "negative_controls": []
+    }
+  }
+]

@@ -2,6 +2,11 @@
 external/SkillOpt/
 data_split/*
 !data_split/.gitkeep
+real_data/*
+!real_data/README.md
+!real_data/example_real_notes.template.json
+real_data_split/*
+!real_data_split/.gitkeep
 results/*
 !results/.gitkeep
 __pycache__/

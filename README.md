@@ -9,6 +9,7 @@ debug runs, or quota-limited runner modes from the working folder.
 ## Project Layout
 
 - `data/synthetic_notes.json` - synthetic ADR notes and gold labels.
+- `real_data/` - local-only de-identified real notes for final evaluation.
 - `skills/base_skill.md` - the only committed starting skill.
 - `skillopt_adr/` - ADR environment copied into `external/SkillOpt/skillopt/envs/adr`.
 - `scorer/` - ADR scorer and schema.
@@ -16,6 +17,7 @@ debug runs, or quota-limited runner modes from the working folder.
 - `scripts/` - data split, SkillOpt patching, and result summary helpers.
 - `run_adr_skillopt.ps1` - one command to install, run, and collect results.
 - `results/` - generated run outputs; intentionally ignored by Git.
+- `real_data_split/` - generated real-data eval split; intentionally ignored by Git.
 - `external/SkillOpt/` - cloned automatically; intentionally ignored by Git.
 
 ## Requirements
@@ -40,6 +42,7 @@ On Windows, double-click one of these files from this folder:
 
 - `RUN_FROM_BASE.bat` - starts from the committed `skills/base_skill.md`.
 - `RUN_FROM_BEST.bat` - starts from `results/best_skill.md` after a previous successful run.
+- `RUN_REAL_DATA.bat` - runs prediction/scoring on `real_data/real_notes.json` without training.
 
 The run scripts set the usual defaults for you:
 
@@ -49,6 +52,9 @@ The run scripts set the usual defaults for you:
 - per-note timeout: `240` seconds
 - per-note retries: `2`
 - test evaluation: off
+
+`RUN_REAL_DATA.bat` uses `results/best_skill.md` when it exists; otherwise it
+falls back to `skills/base_skill.md`.
 
 ## First Run By Command
 
@@ -110,3 +116,48 @@ The runner writes:
 
 The paper is not built by this project. Final paper writing should happen
 separately after you decide which run is reportable.
+
+## Real Data Evaluation
+
+Put de-identified real notes in:
+
+```text
+real_data/real_notes.json
+```
+
+Then double-click:
+
+```text
+RUN_REAL_DATA.bat
+```
+
+The real data file is ignored by Git. Use this JSON shape:
+
+```json
+[
+  {
+    "id": "REAL_001",
+    "note_text": "De-identified clinical note text...",
+    "gold": {
+      "suspected_adr_signals": [],
+      "unlinked_adverse_events": [],
+      "negative_controls": []
+    }
+  }
+]
+```
+
+`gold` is optional. If present, the script computes scores. If absent, it saves
+predictions only.
+
+Real-data outputs go under:
+
+```text
+results/real_data/
+```
+
+The latest summary is copied to:
+
+```text
+results/real_data/LATEST_REAL_DATA_SUMMARY.md
+```
